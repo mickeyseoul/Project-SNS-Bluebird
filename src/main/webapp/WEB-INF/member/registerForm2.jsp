@@ -5,9 +5,9 @@
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script type="text/javascript">
-// 다음 지도 api
+
 function goAddr(){
-        //카카오 지도 발생
+        //다음 지도 발생
         new daum.Postcode({
             oncomplete: function(data) { //선택시 입력값 세팅
                 document.f.addr1.value = data.zonecode; // zone 넣기

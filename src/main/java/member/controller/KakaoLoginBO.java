@@ -17,7 +17,7 @@ public class KakaoLoginBO {
 
 	// 카카오 로그인 정보
 	private final static String KAKAO_CLIENT_ID = "1ef6e9e23d86763f7ce4ce1e12890b2e"; //클라이언트 ID, REST API 키
-	private final static String KAKAO_CLIENT_SECRET = ""; //클라이언트 시크릿
+	private final static String KAKAO_CLIENT_SECRET = "B3ORmcq9M4K1s8gUPQ0RPH7dFq6yXh9B"; //클라이언트 시크릿
 	private final static String KAKAO_REDIRECT_URI = "http://localhost:8080/ex/callbackKakao.mem"; //Redirect URL
 	private final static String SESSION_STATE = "kakao_oauth_state";
 	private final static String PROFILE_API_URL = "https://kapi.kakao.com/v2/user/me";

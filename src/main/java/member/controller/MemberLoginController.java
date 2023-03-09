@@ -171,6 +171,13 @@ public class MemberLoginController {
 
 		jsonObj = (JSONObject) jsonParser.parse(apiResult);
 		System.out.println("jsonObj"+jsonObj); //json 정보
+		/*
+		jsonObj{"id":2542531968,"connected_at":"2023-03-08T04:55:41Z",
+		"kakao_account":{"email_needs_agreement":false,"age_range":"30~39","profile_nickname_needs_agreement":false,
+		"gender_needs_agreement":false,"profile":{"nickname":"미키"},"is_email_valid":true,"is_email_verified":true,
+		"age_range_needs_agreement":false,"has_gender":false,"has_age_range":true,"has_email":true,
+		"email":"aaa@naver.com"},"properties":{"nickname":"미키"}}
+		*/
 
 		JSONObject response_obj = (JSONObject) jsonObj.get("kakao_account");	
 		JSONObject response_obj2 = (JSONObject) response_obj.get("profile");
